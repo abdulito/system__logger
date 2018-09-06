@@ -1,13 +1,16 @@
 type: v1/system
+
 node_pools:
   main:
     instance_type: t2.small
     num_instances: 1
+
 components:
-  simpleLogger:
+  logger:
     type: v1/service
     description: Simple logger component
     node_pool: /:main
+    num_instances: 1
     build:
       type: command_build
       source:
@@ -18,11 +21,10 @@ components:
         repository: python
         tag: "2.7"
       command:
-        - "echo \"no installation steps\";sleep 5m"
+        - 'echo "no installation steps"'
     exec:
       command:
       - python
       - simple_logger.py
       environment:
-        LOG_FREQUENCY_SECONDS: "2"
-    num_instances: 1
+        LOG_FREQUENCY_SECONDS: '2'
