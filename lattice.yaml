@@ -4,16 +4,17 @@ components:
   simpleLogger:
     type: v1/service
     description: Simple logger component
-    git_repository:
-      url: https://github.com/abdulito/simple-logger.git
-      version: "1.0"
     build:
       type: command_build
+      source:
+        git_repository:
+          url: "https://github.com/abdulito/simple-logger.git"
+          branch: "master"
       base_image:
         repository: python
         tag: "2.7"
       command:
-        - "echo \"no installation steps\";sleep 5m"
+        - "echo \"no installation steps\""
     exec:
       command:
       - python
