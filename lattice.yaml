@@ -12,6 +12,8 @@ components:
       base_image:
         repository: library/python
         tag: "2.7"
+      command:
+        - ls
 
     exec:
       command:
