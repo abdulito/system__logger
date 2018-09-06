@@ -1,9 +1,13 @@
 type: v1/system
-
+node_pools:
+  main:
+    instance_type: t2.small
+    num_instances: 1
 components:
   simpleLogger:
     type: v1/service
     description: Simple logger component
+    node_pool: /:main
     build:
       type: command_build
       source:
