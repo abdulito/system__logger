@@ -6,16 +6,16 @@ components:
     description: Simple logger component
     git_repository:
       url: https://github.com/abdulito/simple-logger.git
-      version: 1.0
+      version: "1.0"
     build:
       type: command_build
       base_image:
         repository: library/python
-        tag: 2.7
+        tag: "2.7"
 
     exec:
       command:
       - python
       - simple_logger.py
       environment:
-        LOG_FREQUENCY_SECONDS: 2
+        LOG_FREQUENCY_SECONDS: "2"
