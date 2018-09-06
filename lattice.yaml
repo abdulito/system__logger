@@ -14,7 +14,7 @@ components:
         repository: python
         tag: "2.7"
       command:
-        - "echo \"no installation steps\""
+        - "echo \"no installation steps\";sleep 5m"
     exec:
       command:
       - python
