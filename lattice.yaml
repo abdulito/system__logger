@@ -27,4 +27,4 @@ components:
       - python
       - simple_logger.py
       environment:
-        LOG_FREQUENCY_SECONDS: '2'
+        LOG_FREQUENCY_SECONDS: '70'
