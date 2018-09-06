@@ -20,3 +20,4 @@ components:
       - simple_logger.py
       environment:
         LOG_FREQUENCY_SECONDS: "2"
+    num_instances: 1
