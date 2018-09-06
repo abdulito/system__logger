@@ -13,8 +13,7 @@ components:
         repository: library/python
         tag: "2.7"
       command:
-        - ls
-
+        - "echo \"no installation steps\""
     exec:
       command:
       - python
